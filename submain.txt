@@ -1,0 +1,50 @@
+
+int submain()
+{
+    k1:printf("\n1. Create a New Student Record \n");
+    printf("2. Find Student by Name \n");
+    printf("3. Find Student by Roll Number \n");
+    printf("4. Display Details of all Students \n");
+    printf("5. Modify a Student Record \n");
+    printf("6. Delete a Student Record\n");
+    printf("7. Total Number of Students\n");
+    printf("8. Print all Names with Roll Number\n");
+    printf("9. To END\n\n");
+    printf("Enter your Choice number : ");
+    int n;
+    scanf("%d",&n);
+
+    switch(n)
+    {
+        case 1:
+            Newrecord();
+            break;
+        case 2:
+            findbyname();
+            break;
+        case 3:
+            findbyroll();
+            break;
+        case 4:
+            displayall();
+            break;
+        case 5:
+            modify();
+            break;
+        case 6:
+            deletestud();
+            break;
+        case 7:
+            total();
+            break;
+        case 8:
+            names();
+            break;
+        case 9:
+            exit(0);
+            break;
+        default:
+            printf("\nIt is an Invalid choice\nEnter Correct Choice\n");
+            goto k1;
+    }
+}
